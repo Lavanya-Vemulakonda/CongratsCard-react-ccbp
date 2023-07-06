@@ -1,46 +1,97 @@
+/* Write your code here. */
 * {
   box-sizing: border-box;
 }
 
 body {
+  margin: 0px;
+}
+
+.social-buttons-container {
   background-image: url("https://assets.ccbp.in/frontend/react-js/social-buttons-bg.png");
-  height: 100vh;
+  min-height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: bree serif;
-}
-h1 {
-  font-size: 40px;
-  color: #ffffff;
-  text-align: center;
-}
-.like-button {
-  background-color: #eab308;
-  color: #ffffff;
-}
-.comment-button {
-  background-color: #ffffff;
-  color: #323f4b;
-}
-.share-button {
-  background-color: #1d4ed8;
-  color: #ffffff;
+  width: 80%;
+  max-width: 700px;
 }
 
-button {
-  height: 40px;
-  width: 100px;
-  border-radius: 40px;
-  border: 0;
-  margin: 10px 10px;
-}
-
-@media (max-width: 767px) {
-  .buttonContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@media screen and (min-width: 768px) {
+  .content-container {
+    width: 60%;
   }
+}
+
+@media screen and (min-width: 992px) {
+  .content-container {
+    width: 50%;
+  }
+}
+
+.heading {
+  font-family: "Bree serif";
+  font-size: 34px;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 65px;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons-container {
+    flex-direction: row;
+  }
+}
+
+.button {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: none;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  height: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    margin: 10px;
+  }
+}
+
+.like-button {
+  color: #ffffff;
+  background-color: #eab308;
+}
+
+.comment-button {
+  color: #323f4b;
+  background-color: #ffffff;
+}
+
+.share-button {
+  color: #ffffff;
+  background-color: #1d4ed8;
 }
